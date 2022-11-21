@@ -1,0 +1,2 @@
+let's count some words!
+then let's rate this book five million stars on manning.com!
