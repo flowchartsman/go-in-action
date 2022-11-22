@@ -15,5 +15,5 @@ func main() {
 		}
 	}
 
-	fmt.Println("Found", numSpaces, "spaces, so there must be", numSpaces+1, "words")
+	fmt.Println("Found", numSpaces+1, "words")
 }
