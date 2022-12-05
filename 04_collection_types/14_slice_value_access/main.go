@@ -14,7 +14,8 @@ func printMedalists(raceName string, contestants []string) {
 
 func printMedalists2(raceName string, contestants []string) error {
 	if len(contestants) < 3 {
-		return fmt.Errorf("not enough contestants for %s. Want: 3 Got: %d", raceName, len(contestants))
+		return fmt.Errorf("not enough contestants for %s. Want: 3 Got: %d",
+			raceName, len(contestants))
 	}
 	fmt.Printf("Results for %s:\n", raceName)
 	fmt.Printf("Gold Medal: %s\n", contestants[0])

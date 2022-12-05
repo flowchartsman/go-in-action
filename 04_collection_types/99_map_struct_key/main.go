@@ -28,12 +28,21 @@ func main() {
 	favoriteFoods[andy] = []string{"jambalaya", "bulgogi"}
 	favoriteFoods[john] = []string{"crab cakes", "licorice"}
 
-	johnFoods, found := favoriteFoods[person{firstName: "John", lastName: "Smith", age: 29}]
+	johnFoods, found := favoriteFoods[person{
+		firstName: "John",
+		lastName:  "Smith",
+		age:       29,
+	}]
 	// The "firstName" and "lastName" fields are the same, but the "age"
 	// field is different, so there is no match.
 	fmt.Println(johnFoods, found) // output: [], false
 
-	// All fields match a key value in the map, so the element value is returned.
-	andyFoods, found := favoriteFoods[person{firstName: "Andy", lastName: "Walker", age: 42}]
+	// All fields match a key value in the map, so the element value is
+	// returned.
+	andyFoods, found := favoriteFoods[person{
+		firstName: "Andy",
+		lastName:  "Walker",
+		age:       42,
+	}]
 	fmt.Println(andyFoods, found) // output: [jambalaya bulgogi] true
 }

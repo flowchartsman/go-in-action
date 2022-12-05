@@ -27,7 +27,6 @@ func printSliceInfo[T any](declaration string, s []T) {
 }
 
 func main() {
-
 	stringSlice := []string{"A", "B", "C", "D", "E", "F", "G", "H", "I"}
 
 	newSliceA := stringSlice[3:6] // [D E F]
@@ -62,7 +61,7 @@ func main() {
 
 	fmt.Println("\n--Passing A Slice Range To A Function:")
 	measurements := getMeasurements()
-	fmt.Printf("got %d measurements, creating an average using the first 10\n", len(measurements))
+	fmt.Printf("averaging 10 out of of %d measurements\n", len(measurements))
 	averageMeasurement := avg(measurements[:10])
 	fmt.Printf("average measurement is: %f\n", averageMeasurement)
 }
