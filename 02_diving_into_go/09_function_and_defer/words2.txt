@@ -1,0 +1,3 @@
+This file has a few more words in it, but it's still pretty tame compared to the collected works of Leo Tolstoy.
+But, hey, now that you're scanning the file instead of reading it all into memory, you can scan whatever you want, without fear.
+WC is for chumps, re-write everything in Go, this is the way.
